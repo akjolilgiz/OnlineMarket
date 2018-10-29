@@ -1,0 +1,9 @@
+
+<h2>Marketplace</h2>
+<hr>
+<div class="jumbotron">Current Album</div>
+<div *ngFor="let album of albums" (click)="goToDetailPage(album)" class="panel panel-default">
+  <div class="panel-body">
+    <h3><em>{{album.title}}</em> by {{album.artist}}</h3>
+  </div>
+</div>
